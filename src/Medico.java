@@ -4,7 +4,7 @@ public class Medico extends Empleado{
     private double valorConsulta;
 
 
-    public Medico(int cedula, String nombre, int edad, String correo, String especialidad, int numeroPacientesAtendidos, double valorConsulta) {
+    public Medico(String cedula, String nombre, int edad, String correo, String especialidad, String s, int numeroPacientesAtendidos, double valorConsulta) {
         super(cedula, nombre, edad, correo);
         this.especialidad = especialidad;
         this.numeroPacientesAtendidos = numeroPacientesAtendidos;

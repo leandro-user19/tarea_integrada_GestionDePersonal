@@ -3,7 +3,7 @@ public class Administrativo extends Empleado{
     private int horasTrabajadas;
     private double valorHora;
 
-    public Administrativo(int cedula, String nombre, int edad, String correo, String departamento, int horasTrabajadas, double valorHora) {
+    public Administrativo(String cedula, String nombre, int edad, String correo, String departamento, String s, int horasTrabajadas, double valorHora) {
         super(cedula, nombre, edad, correo);
         this.departamento = departamento;
         this.horasTrabajadas = horasTrabajadas;

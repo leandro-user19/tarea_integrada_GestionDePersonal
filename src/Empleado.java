@@ -1,11 +1,12 @@
 public abstract class Empleado {
-    private int cedula;
+    private String cedula;
     private String nombre;
     private int edad;
     private String correo;
+    private String telefono;
 
 
-    public Empleado(int cedula, String nombre, int edad, String correo) {
+    public Empleado(String cedula, String nombre, int edad, String correo) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.edad = edad;
@@ -17,11 +18,11 @@ public abstract class Empleado {
     public abstract double calcularPago();
 
 
-    public int getCedula() {
+    public String getCedula() {
         return cedula;
     }
 
-    public void setCedula(int cedula) {
+    public void setCedula(String cedula) {
         this.cedula = cedula;
     }
 
@@ -47,5 +48,9 @@ public abstract class Empleado {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public String getTelefono() {
+        return "";
     }
 }
