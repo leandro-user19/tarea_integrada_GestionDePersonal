@@ -40,3 +40,53 @@ public class Main {
                     throw new Exception("Opcion invalida");
                 }
 
+                switch (opcion) {
+
+                    case 1:
+                        s.registrarMedico();
+                        break;
+
+                    case 2:
+                        s.registrarAdministrativo();
+                        break;
+
+                    case 3:
+                        s.mostrar();
+                        break;
+
+                    case 4:
+                        s.buscar();
+                        break;
+
+                    case 5:
+                        s.actualizar();
+                        break;
+
+                    case 6:
+                        s.eliminar();
+                        break;
+
+                    case 7:
+                        s.calcularPagos();
+                        break;
+
+                    case 8:
+                        s.estadisticas();
+                        break;
+
+                    case 9:
+                        System.out.println("Saliendo del sistema...");
+
+                        break;
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.println("Error: ingrese solo numeros");
+
+            } catch (Exception e) {
+                System.out.println("Error: " + e.getMessage());
+            }
+
+        } while (opcion != 9);
+    }
+}
